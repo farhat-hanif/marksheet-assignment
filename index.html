@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+</head>
+<body>
+    <script>
+        var english=parseInt(prompt("enter your english marks"));
+        var urdu=parseInt(prompt("enter your urdu marks"));
+        var math=parseInt(prompt("enter your math marks"));
+        var biology=parseInt(prompt("enter your biology marks"));
+        var total_obtain=english+urdu+math+biology;
+        // document.write(total_obtain);
+        var total_marks=400;
+        var percentage=(total_obtain/total_marks)*100;
+        document.write(percentage);
+
+        if(percentage>=33 && percentage<=45)
+        {
+            alert("E-Grade");
+        }
+         else if(percentage>=46 && percentage<=56)
+        {
+            alert("D-Grade");
+        }
+           else if(percentage>=57 && percentage<=63)
+        {
+            alert("C-Grade");
+        }
+           else if(percentage>=64 && percentage<=77)
+        {
+            alert("B-Grade");
+        }
+           else if(percentage>=78 && percentage<=100)
+        {
+            alert("A-Grade");
+        }
+        else
+        {
+            alert("failed");
+     }
+
+    </script>
+</body>
+</html>
